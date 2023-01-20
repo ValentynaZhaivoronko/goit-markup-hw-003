@@ -22,6 +22,37 @@ font-size: 16px;
 background: var(--mein-background);
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+        margin-top: 0;
+        margin-bottom: 0;
+}
+
+ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+}
+
+img {
+        display: block;
+}
+
+button {
+        cursor: pointer;
+}
+
+.container {
+        width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
 /*======== components======== */
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -44,6 +75,34 @@ background: var(--mein-background);
 /*======== /components======== */
 /*======== header======== */
 
+.page-header-container,
+.page-nav-container,
+.menu-nav-header,
+.kontakt-header-kontainer {
+        display: flex;
+        align-items: center;
+}
+
+.logo-header {
+        margin-right: 76px;
+}
+
+.menu-item:not(:last-child) {
+        margin-right: 40px;
+}
+
+.page-header-container {
+        padding-top: 24px;
+        padding-bottom: 24px;
+}
+
+.kontackt {
+        margin-left: auto;
+}
+
+.tel-nummer {
+        margin-left: 40px;
+}
 
 .menu-link {
 font-weight: 500;
@@ -78,15 +137,26 @@ color: var(--primary-text-color)
 
 /*======== hero======== */
 
+.hero-container {
+        padding-top: 188px;
+        padding-bottom: 188px;
+}
+
 .main-title {
         color: var(--mein-background);
         font-weight: 700;
         font-size: 56px;
         line-height: 1.1;
+
+        width: 494px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
 }
 
 .hero {
         background-color: var(--primary-text-color);
+        height: 600px;
 }
 .btn {
     font-style: normal;
@@ -94,14 +164,21 @@ color: var(--primary-text-color)
     font-size: 16px;
     line-height: 1.5;
 
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
 
     color: var(--mein-background);
     background: var(--button-mein-background);
-    cursor: pointer;
-    
 }
 
 .btn:hover
@@ -111,22 +188,45 @@ color: var(--primary-text-color)
 /*======== /hero======== */
 /*======== about======== */
 
+.list-about-cotainer {
+        display: flex;
+        align-items: center;
+        height: 344px;
+}
+
+.list-about:not(:last-child) {
+        margin-right: 24px;
+}
+
+
+
 .title-about {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        color: var(--primary-text-color)
+        color: var(--primary-text-color);
+        margin-top: 120px;
+        margin-bottom: 8px;
 }
 .text {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: var(--secondary-text-color)
+        color: var(--secondary-text-color);      
 }
 /*======== /about======== */
 
 /*======== product======== */
+
+
+.list-product {
+        display: flex;
+        padding-bottom: 120px;
+
+}
+   
+
 .title-section {
         font-weight: 700;
         font-size: 36px;
@@ -134,7 +234,9 @@ color: var(--primary-text-color)
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        color: var(--primary-text-color)
+        color: var(--primary-text-color);
+        padding-top: 120px;
+        padding-bottom: 72px;
 }
 
 .img-product {
@@ -144,11 +246,36 @@ color: var(--primary-text-color)
     
         background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
         background-blend-mode: soft-light, normal;
-        border: 1px solid #E7E9FC;
+        border: 1px solid var(--footer-text-color);
 }
 /*======== /product======== */
 
 /*======== our team======== */
+
+.our-team {
+        background-color: var(--button-background);
+}
+
+.our-team-list {
+        display: flex;
+        align-items: center;
+}
+
+.title-section {
+        padding-top: 120px;
+}
+
+.menu-item-team:not(:last-child) {
+        margin-right: 24px;
+}
+
+.menu-item-team {
+        width: 264px;
+        height: 380px;
+        background-color: var(--mein-background);
+        margin-bottom: 120px;
+}
+
 .img-team {
         width: 264px;
         height: 260px;
@@ -161,6 +288,7 @@ color: var(--primary-text-color)
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
+        padding-top: 32px;
 }
 
 .profession-team {
@@ -169,16 +297,25 @@ color: var(--primary-text-color)
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--secondary-text-color);
+        padding-bottom: 32px;
 }
 /*======== /our team======== */
 
 /*======== footer======== */
+
+.footer-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+}
 
 .text-footer {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--footer-text-color);
+        width: 264px;
+        height: 72px;
+        padding-top: 16px;
 }
 
 .logo-second {
@@ -190,18 +327,43 @@ color: var(--primary-text-color)
 /*======== /footer======== */
 
 /* ========portfolio======== */
+
+.portfolio-header {
+        border-bottom: 1px solid var(--footer-text-color);
+}
+
+
+
 .btn-portfolio {
-        cursor: pointer;
-        font-family: inherit;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        display: flex;
-        align-items: center;
+        height: 48px;
+        border-radius: 4px;
         text-align: center;
-        letter-spacing: 0.04em;
+        padding-top: 12px;
+        padding-left: 24px;
+        padding-bottom: 12px;
+        padding-right: 24px;
+        border: 1px solid var(--footer-text-color);
         color: var(--link-active-text-color);
-        background: var(--button-background);
+        background-color: var(--button-background);
+
+                font-family: inherit;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.04em;
+}
+
+
+
+.portfolio-container-btn:not(:last-child) {
+        margin-right: 24px;
+}
+
+.portfolio-container {
+        justify-content: center;
 }
 
 .btn-portfolio:hover,
@@ -213,6 +375,54 @@ color: var(--primary-text-color)
 /* ========/portfolio======== */
 
 /* ========section-team-card======== */
+
+.portfolio-container {
+        margin-bottom: 72px;
+}
+
+.portfolio-container {
+        display: flex;
+        align-items: center;
+}
+
+.portfolio-img-container {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.portfolio-img-cart {
+        width: 360px;
+        /* height: 420px; */
+        background-color: var(--mein-background);
+        margin-bottom: 48px;
+        margin-right: 24px;
+        /* width: calc((100%-(24px*2))/3); */
+}
+
+.portfolio-img-cart:nth-child(3n) {
+        margin-right: 0;
+}
+
+.portfolio-img-cart:nth-last-child(-n+3) {
+        margin-bottom: 120px;
+}
+
+.img-card-content-text {
+        border-left: 1px solid #E7E9FC;
+        border-right: 1px solid #E7E9FC;
+        border-bottom: 1px solid #E7E9FC;
+        background-color: var(--mein-background);
+        padding-top: 32px;
+        padding-bottom: 32px;
+}
+
+/* .img-card-content:nth-child(3n) {
+        margin-right: 0;
+} */
+
+/* .img-card-content {
+        margin-right: 24px;
+} */
 
 .title-card-content {
         font-weight: 500;
@@ -228,5 +438,31 @@ color: var(--primary-text-color)
         letter-spacing: 0.02em;
         color: var(--secondary-text-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========section-team-card======== */
 
