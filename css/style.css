@@ -47,8 +47,6 @@ button {
 
 .container {
         width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
 }
@@ -83,17 +81,17 @@ button {
         align-items: center;
 }
 
+.page-header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+}
+
 .logo-header {
         margin-right: 76px;
 }
 
 .menu-item:not(:last-child) {
         margin-right: 40px;
-}
-
-.page-header-container {
-        padding-top: 24px;
-        padding-bottom: 24px;
 }
 
 .kontackt {
@@ -126,6 +124,10 @@ color: var(--primary-text-color)
         color: var(--link-active-text-color);
 }
 
+.menu-nav-header .link.current {
+color: var(--link-active-text-color);
+}
+
 .imail:hover,
 .imail:focus,
 .tel-nummer:hover,
@@ -137,10 +139,6 @@ color: var(--primary-text-color)
 
 /*======== hero======== */
 
-.hero-container {
-        padding-top: 188px;
-        padding-bottom: 188px;
-}
 
 .main-title {
         color: var(--mein-background);
@@ -156,7 +154,8 @@ color: var(--primary-text-color)
 
 .hero {
         background-color: var(--primary-text-color);
-        height: 600px;
+        padding-top: 188px;
+        padding-bottom: 188px;
 }
 .btn {
     font-style: normal;
@@ -177,6 +176,9 @@ color: var(--primary-text-color)
     align-items: center;
     letter-spacing: 0.04em;
 
+    border: none;
+    border-radius: 4px;
+
     color: var(--mein-background);
     background: var(--button-mein-background);
 }
@@ -188,10 +190,19 @@ color: var(--primary-text-color)
 /*======== /hero======== */
 /*======== about======== */
 
+.section {
+        padding-left: 15px;
+        padding-right: 15px;
+}
+
+.content-container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+}
+
 .list-about-cotainer {
         display: flex;
         align-items: center;
-        height: 344px;
 }
 
 .list-about:not(:last-child) {
@@ -206,7 +217,6 @@ color: var(--primary-text-color)
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
-        margin-top: 120px;
         margin-bottom: 8px;
 }
 .text {
@@ -219,13 +229,18 @@ color: var(--primary-text-color)
 
 /*======== product======== */
 
+.container-product {
+        padding-top: 0;
+}
 
 .list-product {
         display: flex;
-        padding-bottom: 120px;
-
+        justify-content: center;
 }
    
+.menu-item:not(:last-child) {
+        margin-right: 24px;
+}
 
 .title-section {
         font-weight: 700;
@@ -235,18 +250,13 @@ color: var(--primary-text-color)
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--primary-text-color);
-        padding-top: 120px;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
 }
 
 .img-product {
-        box-sizing: border-box;
-        width: 360px;
-        height: 300px;
     
         background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
         background-blend-mode: soft-light, normal;
-        border: 1px solid var(--footer-text-color);
 }
 /*======== /product======== */
 
@@ -258,11 +268,7 @@ color: var(--primary-text-color)
 
 .our-team-list {
         display: flex;
-        align-items: center;
-}
-
-.title-section {
-        padding-top: 120px;
+        justify-content: center;
 }
 
 .menu-item-team:not(:last-child) {
@@ -270,15 +276,12 @@ color: var(--primary-text-color)
 }
 
 .menu-item-team {
-        width: 264px;
-        height: 380px;
         background-color: var(--mein-background);
-        margin-bottom: 120px;
 }
 
-.img-team {
-        width: 264px;
-        height: 260px;
+.name-team-profession {
+       margin-top: 32px;
+       margin-bottom: 32px; 
 }
 
 .name-team {
@@ -288,7 +291,6 @@ color: var(--primary-text-color)
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
-        padding-top: 32px;
 }
 
 .profession-team {
@@ -297,15 +299,15 @@ color: var(--primary-text-color)
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--secondary-text-color);
-        padding-bottom: 32px;
 }
 /*======== /our team======== */
 
 /*======== footer======== */
 
-.footer-container {
+.footer {
         padding-top: 100px;
         padding-bottom: 100px;
+        background: var(--primary-text-color);
 }
 
 .text-footer {
@@ -314,16 +316,13 @@ color: var(--primary-text-color)
         letter-spacing: 0.02em;
         color: var(--footer-text-color);
         width: 264px;
-        height: 72px;
-        padding-top: 16px;
+        margin-top: 16px;
 }
 
 .logo-second {
         color: var(--button-background);
 }
-.footer {
-        background: var(--primary-text-color);
-}
+
 /*======== /footer======== */
 
 /* ========portfolio======== */
@@ -335,7 +334,6 @@ color: var(--primary-text-color)
 
 
 .btn-portfolio {
-        height: 48px;
         border-radius: 4px;
         text-align: center;
         padding-top: 12px;
@@ -392,11 +390,9 @@ color: var(--primary-text-color)
 
 .portfolio-img-cart {
         width: 360px;
-        /* height: 420px; */
         background-color: var(--mein-background);
         margin-bottom: 48px;
         margin-right: 24px;
-        /* width: calc((100%-(24px*2))/3); */
 }
 
 .portfolio-img-cart:nth-child(3n) {
@@ -404,7 +400,7 @@ color: var(--primary-text-color)
 }
 
 .portfolio-img-cart:nth-last-child(-n+3) {
-        margin-bottom: 120px;
+        margin-bottom: 0;
 }
 
 .img-card-content-text {
@@ -416,13 +412,6 @@ color: var(--primary-text-color)
         padding-bottom: 32px;
 }
 
-/* .img-card-content:nth-child(3n) {
-        margin-right: 0;
-} */
-
-/* .img-card-content {
-        margin-right: 24px;
-} */
 
 .title-card-content {
         font-weight: 500;
