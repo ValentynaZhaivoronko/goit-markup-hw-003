@@ -49,6 +49,7 @@ button {
         width: 1158px;
         margin-left: auto;
         margin-right: auto;
+        padding: 0 15px;
 }
 
 /*======== components======== */
@@ -191,14 +192,15 @@ color: var(--link-active-text-color);
 /*======== about======== */
 
 .section {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding {
+                padding: 120px 0;
+        }
 }
 
-.content-container {
+/* .content-container {
         padding-top: 120px;
         padding-bottom: 120px;
-}
+} */
 
 .list-about-cotainer {
         display: flex;
@@ -280,8 +282,8 @@ color: var(--link-active-text-color);
 }
 
 .name-team-profession {
-       margin-top: 32px;
-       margin-bottom: 32px; 
+       padding-top: 32px;
+       padding-bottom: 32px; 
 }
 
 .name-team {
@@ -343,6 +345,7 @@ color: var(--link-active-text-color);
         border: 1px solid var(--footer-text-color);
         color: var(--link-active-text-color);
         background-color: var(--button-background);
+        margin-top: 0;
 
                 font-family: inherit;
                 font-weight: 500;
@@ -360,8 +363,13 @@ color: var(--link-active-text-color);
         margin-right: 24px;
 }
 
+.portfolio-container-btn {
+        
+}
+
 .portfolio-container {
         justify-content: center;
+        margin-top: 96px;
 }
 
 .btn-portfolio:hover,
@@ -410,6 +418,7 @@ color: var(--link-active-text-color);
         background-color: var(--mein-background);
         padding-top: 32px;
         padding-bottom: 32px;
+        padding-left: 8px;
 }
 
 
@@ -418,6 +427,7 @@ color: var(--link-active-text-color);
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
         color: var(--primary-text-color)
 }
 
