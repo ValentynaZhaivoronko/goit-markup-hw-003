@@ -91,7 +91,7 @@ button {
         margin-right: 76px;
 }
 
-.menu-item:not(:last-child) {
+.menu-item-header:not(:last-child) {
         margin-right: 40px;
 }
 
@@ -108,7 +108,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: var(--primary-text-color)
+color: var(--primary-text-color);
 }
 
 .imail,
@@ -192,9 +192,8 @@ color: var(--link-active-text-color);
 /*======== about======== */
 
 .section {
-        padding {
-                padding: 120px 0;
-        }
+      padding: 120px 0;
+        
 }
 
 /* .content-container {
@@ -293,6 +292,7 @@ color: var(--link-active-text-color);
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
+        margin-bottom: 8px;
 }
 
 .profession-team {
@@ -363,15 +363,6 @@ color: var(--link-active-text-color);
         margin-right: 24px;
 }
 
-.portfolio-container-btn {
-        
-}
-
-.portfolio-container {
-        justify-content: center;
-        margin-top: 96px;
-}
-
 .btn-portfolio:hover,
 .btn-portfolio:focus{
     background: var(--link-active-text-color);
@@ -383,12 +374,10 @@ color: var(--link-active-text-color);
 /* ========section-team-card======== */
 
 .portfolio-container {
-        margin-bottom: 72px;
-}
-
-.portfolio-container {
         display: flex;
         align-items: center;
+        justify-content: center;
+        margin-bottom: 72px;
 }
 
 .portfolio-img-container {
@@ -418,7 +407,7 @@ color: var(--link-active-text-color);
         background-color: var(--mein-background);
         padding-top: 32px;
         padding-bottom: 32px;
-        padding-left: 8px;
+        padding-left: 16px;
 }
 
 
