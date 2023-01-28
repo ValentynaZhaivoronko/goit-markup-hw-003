@@ -14,6 +14,9 @@
 --footer-text-color: #E7E9FC;
 --button-mein-background: #4D5AE5;
 --mein-background: #FFFFFF;
+--hover-customers: #8E8F99;
+--footer-social: rgba(255, 255, 255, 0.1);
+--footer-social-hover: #31D0AA;
 }
 
 body {
@@ -138,8 +141,22 @@ color: var(--link-active-text-color);
 
 /*======== /header======== */
 
-/*======== hero======== */
+/*======== overlay======== */
+.overlay {
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--primary-text-color);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/deco-elements/people-office.jpg);
+}
+/*======== /overlay======== */
 
+/*======== hero======== */
 
 .main-title {
         color: var(--mein-background);
@@ -196,10 +213,7 @@ color: var(--link-active-text-color);
         
 }
 
-/* .content-container {
-        padding-top: 120px;
-        padding-bottom: 120px;
-} */
+
 
 .list-about-cotainer {
         display: flex;
@@ -225,6 +239,38 @@ color: var(--link-active-text-color);
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--secondary-text-color);      
+}
+.list-about::before {
+        width: 264px;
+        height: 112px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        content: "";
+        background-color: var(--button-background);
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+}
+
+.about-strategy::before {
+        background-image: url(../images/deco-elements/satelit.jpg);  
+        background-size: 60px 64px;
+}
+
+.about-punctuality::before {
+        background-image: url(../images/deco-elements/puncktuality.jpg);
+        background-size: 62px 64px;
+}
+
+.about-diligence::before {
+        background-image: url(../images/deco-elements/diligence.jpg);
+        background-size: 64px 50px;
+}
+
+.about-technologies::before {
+        background-image: url(../images/deco-elements/astronaut.jpg);
+        background-size: 64px 64px;
 }
 /*======== /about======== */
 
@@ -283,6 +329,8 @@ color: var(--link-active-text-color);
 .name-team-profession {
        padding-top: 32px;
        padding-bottom: 32px; 
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0 0 4px 4px;
 }
 
 .name-team {
@@ -301,8 +349,86 @@ color: var(--link-active-text-color);
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--secondary-text-color);
+        margin-bottom: 8px;
 }
+
+/*=========== svg ===========*/
+
+.social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+}
+
+.social-list {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background-color: var(--button-mein-background);
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+}
+
+.social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+}
+
+.social-link:hover,
+.social-link:focus {
+        border-radius: 50%;
+        background-color: var(--link-active-text-color);
+}
+
+/*=========== /svg ===========*/
+
 /*======== /our team======== */
+
+/*=========customers========*/
+
+.customers {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+}
+
+.customers-list {
+        width: 168px;
+        height: 88px;
+        align-items: center;
+}
+
+.customers-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 168px;
+        height: 88px;
+        color: var(--hover-customers);
+        border: 1px solid var(--hover-customers);
+        border-radius: 4px;
+}
+
+.customers-icon {
+        fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+        border-radius: 4px;
+        border: 1px solid var(--link-active-text-color);
+        color: var(--link-active-text-color);
+}
+
+
+
+
+/*=========customers========*/
 
 /*======== footer======== */
 
@@ -323,6 +449,48 @@ color: var(--link-active-text-color);
 
 .logo-second {
         color: var(--button-background);
+}
+
+.footer-title {
+        color: var(--mein-background);
+        size: 16px;
+}
+
+
+.footer-container {
+        display: flex;
+}
+
+.footer-social {
+        margin-left: 120px;
+}
+
+.footer-list {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 16px;
+        margin-right: 16px;
+        border: 1px solid var(--footer-social);
+        background-color: var(--footer-social);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+}
+
+
+.footer-link {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.footer-link:focus,
+.footer-link:hover {
+        background-color: var(--footer-social-hover);
+        border-radius: 50%;
 }
 
 /*======== /footer======== */
@@ -367,7 +535,10 @@ color: var(--link-active-text-color);
 .btn-portfolio:focus{
     background: var(--link-active-text-color);
     color: var(--mein-background);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+
 
 /* ========/portfolio======== */
 
@@ -390,6 +561,12 @@ color: var(--link-active-text-color);
         background-color: var(--mein-background);
         margin-bottom: 48px;
         margin-right: 24px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-img-cart:focus,
+.portfolio-img-cart:hover {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-img-cart:nth-child(3n) {
@@ -401,9 +578,9 @@ color: var(--link-active-text-color);
 }
 
 .img-card-content-text {
-        border-left: 1px solid #E7E9FC;
-        border-right: 1px solid #E7E9FC;
-        border-bottom: 1px solid #E7E9FC;
+        border-left: 1px solid var(--footer-text-color);
+        border-right: 1px solid var(--footer-text-color);
+        border-bottom: 1px solid var(--footer-text-color);
         background-color: var(--mein-background);
         padding-top: 32px;
         padding-bottom: 32px;
